@@ -16,7 +16,7 @@ st.pyplot(heatmap_fig)
 st.write("### Código de la función `generate_heatmap`:")
 show_code(generate_heatmap)
 
-"""
+_hidden_block = """
 st.header("Distribución de Alturas por Región")
 st.write("Este raincloud plot muestra la distribución de alturas de personas dependiendo de la región donde viven.")
 raincloud_fig = generate_raincloud_plot()
@@ -40,7 +40,7 @@ st.write("### Código de la función `generate_nightingale_chart`:")
 show_code(generate_nightingale_chart)
 
 st.header("Gráfico Beeswarm de Valores por Categoría")
-st.write("Este gráfico beeswarm muestra la distribución de valores para diferentes categorías.")
+st.write("Este gráfico beeswarm muestra como se organizan los diferentes tiempos de respuesta en función de la región del servidor.")
 beeswarm_fig = generate_beeswarm_chart()
 st.pyplot(beeswarm_fig)
 st.write("### Código de la función `generate_beeswarm_chart`:")
